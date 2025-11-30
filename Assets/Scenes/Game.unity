@@ -233,8 +233,10 @@ MonoBehaviour:
   rb: {fileID: 166455126}
   col: {fileID: 166455130}
   jumpForce: 3
-  groundCheckDistance: 0.08
+  groundCheckExtra: 0.05
   showDetectGroundRay: 0
+  crouchHeightMultiplier: 0.8
+  crouchExtraOffsetY: 0
 --- !u!114 &166455125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +331,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00012859702, y: 0.0073320344}
+  m_Offset: {x: -0.00012856722, y: 0.0067017153}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -339,7 +341,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.14571661, y: 0.13130985}
+  m_Size: {x: 0.13311017, y: 0.12500663}
   m_EdgeRadius: 0
 --- !u!1 &184609926
 GameObject:
@@ -899,7 +901,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

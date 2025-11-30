@@ -12,9 +12,8 @@ public class CharacterVisualSimple : MonoBehaviour
 
     [Header("Crouch (visual only)")]
     [Range(0.2f, 1f)]
-    [SerializeField] private float crouchScaleY = 0.6f;
-
-    [SerializeField] private float crouchOffsetY = -0.08f;
+    [SerializeField] private float crouchScaleY = 0.8f;
+    [SerializeField] private float crouchOffsetY = -0.03f;
 
     private bool isCrouch;
     private Vector3 baseScale;
@@ -34,11 +33,10 @@ public class CharacterVisualSimple : MonoBehaviour
         if (!sr || !movement) return;
 
         bool onGround = movement.IsGround();
-        if (mouthClosed && mouthOpen)
-            sr.sprite = onGround ? mouthClosed : mouthOpen;
+        sr.sprite = onGround ? mouthClosed : mouthOpen;
 
-        var scale = baseScale;
-        var pos = baseLocalPos;
+        Vector3 scale = baseScale;
+        Vector3 pos = baseLocalPos;
 
         if (isCrouch)
         {

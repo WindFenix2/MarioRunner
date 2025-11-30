@@ -61,6 +61,7 @@ public class Character : MonoBehaviour
         crouching = true;
 
         if (visual != null) visual.OnCrouchDown();
+        if (movement != null) movement.SetCrouch(true);
     }
 
     public void OnCrouchUp()
@@ -69,6 +70,7 @@ public class Character : MonoBehaviour
         crouching = false;
 
         if (visual != null) visual.OnCrouchUp();
+        if (movement != null) movement.SetCrouch(false);
     }
 
     public void OnDead()
