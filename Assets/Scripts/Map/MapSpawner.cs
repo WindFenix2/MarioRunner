@@ -21,9 +21,6 @@ public class MapSpawner : MonoBehaviour
     [Tooltip("Templates on scene.")]
     [SerializeField] private List<GameObject> spawnedTemplates;
 
-    [Tooltip("Is play flag.")]
-    [SerializeField] private bool isPlay;
-
     private void Awake()
     {
         if (this.templatesLoader == null)

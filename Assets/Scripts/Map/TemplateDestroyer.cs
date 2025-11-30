@@ -9,17 +9,17 @@ public class TemplateDestroyer : MonoBehaviour
 
     private void Awake()
     {
-        if (this.spawner == null)
-            this.spawner = FindFirstObjectByType<MapSpawner>();
+        if (!spawner)
+            spawner = UnityEngine.Object.FindFirstObjectByType<MapSpawner>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        switch (other.gameObject.tag)
-        {
-            case "LocationTemplate":
-                this.spawner.DeleteTemplate(other.transform.parent.gameObject);
-                break;
-        }
+        if (!other.CompareTag("LocationTemplate")) return;
+
+        var templateRoot = other.transform.parent;
+        if (!templateRoot) return;
+
+        spawner.DeleteTemplate(templateRoot.gameObject);
     }
 }
