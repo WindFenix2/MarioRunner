@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 3311031488316165197}
   - component: {fileID: 4828804273600201262}
   - component: {fileID: 3296418776676949815}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tilemap_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

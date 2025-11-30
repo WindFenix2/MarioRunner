@@ -1267,7 +1267,7 @@ GameObject:
   - component: {fileID: 6350797617571466753}
   - component: {fileID: 4888710034437736649}
   - component: {fileID: 4099659163554915794}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tilemap_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1283,8 +1283,8 @@ Transform:
   m_GameObject: {fileID: 6067814404023595662}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3845, y: 0.2244, z: 0}
-  m_LocalScale: {x: 1.6786844, y: 1.6786844, z: 1.6786844}
+  m_LocalPosition: {x: 1.3964, y: 0.2091, z: 0}
+  m_LocalScale: {x: 1.5085689, y: 1.5085689, z: 1.5085689}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6189084887288871804}
@@ -1401,11 +1401,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0009301156, y: -0.007440768}
+  m_Offset: {x: 0.00051458366, y: -0.0103496015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1415,7 +1415,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.09163499, y: 0.16511847}
+  m_Size: {x: 0.08083078, y: 0.1593008}
   m_EdgeRadius: 0
 --- !u!1 &6372743053065710690
 GameObject:
