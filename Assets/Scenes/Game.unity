@@ -566,10 +566,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSpeed: 1
-  maxSpeed: 5
+  maxSpeed: 2
   speed: 1
-  boostSpeedPerSecond: 0
-  nonBoostSpeedTime: 0
+  boostSpeedPerSecond: 0.1
+  nonBoostSpeedTime: 1
   isPlay: 1
 --- !u!1 &301155457
 GameObject:
@@ -1221,6 +1221,10 @@ PrefabInstance:
     - target: {fileID: 1830810408719965785, guid: ea0c034c844724a4ebc2ef2a508515eb, type: 3}
       propertyPath: m_Name
       value: Template-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830810408719965785, guid: ea0c034c844724a4ebc2ef2a508515eb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
