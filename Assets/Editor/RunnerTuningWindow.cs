@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class RunnerTuningWindow : EditorWindow
 {
-    // ---- DEFAULTS (твои нужные значени€) ----
     private const float DEF_MIN_SPEED = 1f;
     private const float DEF_MAX_SPEED = 2f;
     private const float DEF_BOOST_PER_SEC = 0.1f;
     private const float DEF_NO_BOOST_TIME = 1f;
     private const float DEF_SCORE_PER_SEC = 10f;
 
-    // values in the window
     private float minSpeed = DEF_MIN_SPEED;
     private float maxSpeed = DEF_MAX_SPEED;
     private float boostPerSec = DEF_BOOST_PER_SEC;
@@ -23,12 +21,11 @@ public class RunnerTuningWindow : EditorWindow
     {
         var w = GetWindow<RunnerTuningWindow>("Runner Tuning");
         w.minSize = new Vector2(320, 260);
-        w.ResetDefaults(); // <-- чтобы при открытии были нужные дефолты
+        w.ResetDefaults();
     }
 
     private void OnEnable()
     {
-        // если окно открыли через Layout/перезапуск Unity Ч тоже пусть будут дефолты
         ResetDefaults();
     }
 
