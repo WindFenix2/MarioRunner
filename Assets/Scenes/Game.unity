@@ -536,7 +536,7 @@ MonoBehaviour:
   loadedTemplates: []
   templatesFolderName: Templates
   templatePrefix: Template-
-  templatesCount: 4
+  templatesCount: 6
 --- !u!4 &184609929
 Transform:
   m_ObjectHideFlags: 0
